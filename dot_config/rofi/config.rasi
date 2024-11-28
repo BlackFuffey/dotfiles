@@ -1,0 +1,8 @@
+//@theme "~/.local/share/rofi/themes/rounded-purple-dark.rasi"
+@theme "~/.local/share/rofi/themes/rounded-common.rasi"
+
+configuration {
+    show-icons: true;
+    normal-window: true;
+    steal-focus: true;
+}
