@@ -1,0 +1,11 @@
+function prompt_moditional_setup {
+    
+    # Format the vcs_info_msg_0_ variable
+    echo $vcs_info_msg_0_
+    zstyle ":vcs_info:git:*" formats "%b "
+    local vcs_info_msg=$git_branch_name
+      
+    PROMPT="%B%F{magenta}%n:%F{blue}%~%F{yellow}${git_branch_name} %F{green}%(!.#.$)> %b%f"
+    RPROMPT="%B%(?.%F{green}.%F{red})%? %F{blue}%m%b"
+}
+
